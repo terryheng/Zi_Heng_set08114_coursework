@@ -1,0 +1,106 @@
+% #######################################
+% ########### FILL THESE IN #############
+% #######################################
+\def\mytitle{Coursework Report}
+\def\mykeywords{Fill, These, In, So, google, can, find, your, report}
+\def\myauthor{Zi Heng}
+\def\contact{40337723@napier.ac.uk}
+\def\mymodule{Mobile Applications Development (SET08114)}
+% #######################################
+% #### YOU DON'T NEED TO TOUCH BELOW ####
+% #######################################
+\documentclass[10pt, a4paper]{article}
+\usepackage[a4paper,outer=1.5cm,inner=1.5cm,top=1.75cm,bottom=1.5cm]{geometry}
+\twocolumn
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+%colour our links, remove weird boxes
+\usepackage[colorlinks,linkcolor={black},citecolor={blue!80!black},urlcolor={blue!80!black}]{hyperref}
+%Stop indentation on new paragraphs
+\usepackage[parfill]{parskip}
+%% Arial-like font
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+%Napier logo top right
+\usepackage{watermark}
+%Lorem Ipusm dolor please don't leave any in you final report ;)
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{listings}
+%give us the Capital H that we all know and love
+\usepackage{float}
+%tone down the line spacing after section titles
+\usepackage{titlesec}
+%Cool maths printing
+\usepackage{amsmath}
+%PseudoCode
+\usepackage{algorithm2e}
+
+\titlespacing{\subsection}{0pt}{\parskip}{-3pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\paragraph}{0pt}{\parskip}{\parskip}
+\newcommand{\figuremacro}[5]{
+    \begin{figure}[#1]
+        \centering
+        \includegraphics[width=#5\columnwidth]{#2}
+        \caption[#3]{\textbf{#3}#4}
+        \label{fig:#2}
+    \end{figure}
+}
+
+\lstset{
+	escapeinside={/*@}{@*/}, language=C++,
+	basicstyle=\fontsize{8.5}{12}\selectfont,
+	numbers=left,numbersep=2pt,xleftmargin=2pt,frame=tb,
+    columns=fullflexible,showstringspaces=false,tabsize=4,
+    keepspaces=true,showtabs=false,showspaces=false,
+    backgroundcolor=\color{white}, morekeywords={inline,public,
+    class,private,protected,struct},captionpos=t,lineskip=-0.4em,
+	aboveskip=10pt, extendedchars=true, breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941}
+}
+
+\thiswatermark{\centering \put(336.5,-38.0){\includegraphics[scale=0.8]{logo}} }
+\title{\mytitle}
+\author{\myauthor\hspace{1em}\\\contact\\Edinburgh Napier University\hspace{0.5em}-\hspace{0.5em}\mymodule}
+\date{}
+\hypersetup{pdfauthor=\myauthor,pdftitle=\mytitle,pdfkeywords=\mykeywords}
+\sloppy
+% #######################################
+% ########### START FROM HERE ###########
+% #######################################
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	\paragraph{}
+	In this modern age the typical view of a user having a single desktop machine and only having access to information services from that machine has become completely
+    inappropriate given the widespread adoption of mobile devices such as cellular phones, pagers, laptop computers and the possibility that a user may have a machine at home as well as work.
+    \paragraph{}
+    In all of the electronic device, mobile phone one of the most popular device compare with others such as television or computer. For that, mobile application become one of the famous ways that have an opportunity to earn money. This assignment is my first assignment about it. I have design a simple calculator apps for this assignment. 
+	\section{Software Design}
+	\paragraph{}
+	Before starting the assignment, I was considering what kind of mobile apps that i would like to do. After the list that was given by the lecture, I have decided to choose whether to write a simple game, a music player or a simple calculator. At the end i have decided to write a simple calculator apps for this assignment. After i have choose what apps do I want to do, I have find some example of the calculator apps for some reference. 
+
+	\section{Implementation}
+	\paragraph{}
+	This is the first time to write a mobile apps and I have a lot of idea about this apps. i this apps i would like to have all of the element of a simple calculator such as all the number button, the cancel button and also all the function button such as plus, minus and others. The photo above shows the apps that i have done i the period that was given by the lecture.
+	
+	\figuremacro{h}{Untitled}{ImageTitle}{ - Screen Shot of Project }{1.0}
+	
+	\section{Critical Evaluation}
+	\paragraph{}
+	At the beginning, I have design a calculator layout that more complex then the one which have been done and submitted, but at the end I change it to the latest layout because i think that the layout that I designed more simple that the original one so i decided to choose the latest one.
+	
+	\section{Personal Evaluation}
+    \paragraph{}
+     Based on this project, I have learn some basic technique of writing a mobile apps and also how a mobile apps working. I think that this apps is not a perfect apps because there are missing plenty of function of a calculator such as the percentage button, sin, cos, tan button and others. The layout of the calculator also not beautiful enough to attract others attraction. I think these are the element that i need to improve and make it better. 
+     
+	
+	
+ \bibliographystyle{ieeetr} 
+ \bibliography{references}
+\end{document}
